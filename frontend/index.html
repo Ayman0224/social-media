@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Social Media</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1>Social Media</h1>
+
+        <a href="profile.html">Profile</a>
+        <button id="followButton">Follow</button>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Create Post -->
+        <section class="create-post">
+            <h2>Create a Post</h2>
+
+            <textarea
+                id="postInput"
+                placeholder="What's on your mind?"
+            ></textarea>
+
+            <button id="postButton">Post</button>
+        </section>
+
+
+        <!-- Posts -->
+        <section class="posts">
+
+            <!-- Default Post -->
+            <article class="post">
+
+                <div class="post-header">
+                    <div class="avatar">A</div>
+
+                    <div>
+                        <h3>Ayman</h3>
+                    </div>
+                </div>
+
+                <p class="post-text">
+                    Hello everyone!
+                </p>
+
+                <div class="post-actions">
+                    <button>❤️ Like</button>
+                    <button>💬 Comment</button>
+                </div>
+
+            </article>
+
+
+            <!-- Template for New Posts -->
+            <template id="postTemplate">
+
+                <article class="post">
+
+                    <div class="post-header">
+                        <div class="avatar">A</div>
+
+                        <div>
+                            <h3>Ayman</h3>
+                        </div>
+                    </div>
+
+                    <p class="post-text"></p>
+
+                    <div class="post-actions">
+                        <button>❤️ Like</button>
+                        <button>💬 Comment</button>
+                    </div>
+
+                </article>
+
+            </template>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
