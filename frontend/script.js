@@ -21,7 +21,7 @@ function setupPostButtons(post, postId) {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/likes",
+            "https://social-media-backend-gfn9.onrender.com",
             {
                 method: "POST",
 
@@ -96,7 +96,7 @@ function setupPostButtons(post, postId) {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/comments",
+                    "https://social-media-backend-gfn9.onrender.com",
                     {
                         method: "POST",
 
@@ -169,7 +169,7 @@ if (postButton !== null) {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/posts",
+                "https://social-media-backend-gfn9.onrender.com",
                 {
                     method: "POST",
 
@@ -241,7 +241,7 @@ async function loadPosts() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/posts"
+            "https://social-media-backend-gfn9.onrender.com"
         );
 
 
@@ -309,7 +309,7 @@ if (followButton !== null) {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/follow/${followerId}/${followingId}`
+                `https://social-media-backend-gfn9.onrender.com/follow/${followerId}/${followingId}`
             );
 
             const result = await response.json();
@@ -343,7 +343,7 @@ if (document.getElementById("postsCount") !== null) {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/follow",
+                "https://social-media-backend-gfn9.onrender.com/follow",
                 {
                     method: "POST",
 
